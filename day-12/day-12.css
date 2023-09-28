@@ -1,0 +1,90 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  min-height: 100vh;
+  margin-inline: 20%;
+  min-width: 50%;
+}
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #e0e0e0;
+}
+
+.tab-button.active {
+  background-color: #ccc;
+}
+
+.city {
+  display: none;
+  padding: 20px;
+  margin-top: -20px;
+  border-top: none;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content {
+  background: rgb(27, 27, 27);
+  background: linear-gradient(
+    90deg,
+    rgba(27, 27, 27, 0.5914740896358543) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  margin-inline: -20px;
+  padding: 0.5rem;
+  color: #f3f3f3;
+  margin-right: 60%;
+}
+.city#paris {
+  background-image: url("https://media.istockphoto.com/id/1345426734/photo/eiffel-tower-paris-river-seine-sunset-twilight-france.jpg?s=612x612&w=0&k=20&c=I5rAH5d_-Yyag8F0CKzk9vzMr_1rgkAASGTE11YMh9A=");
+}
+
+.city#santorini {
+  background-image: url("https://lp-cms-production.imgix.net/2021-05/shutterstockRF_1563449509.jpg?auto=format&w=1440&h=810&fit=crop&q=75");
+}
+
+.city#amsterdam {
+  background-image: url("https://thumbs.dreamstime.com/b/amsterdam-netherlands-dancing-houses-over-river-amstel-landmark-old-european-city-spring-landscape-92873811.jpg");
+}
+
+.city h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.city p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.city.active {
+  display: block;
+}

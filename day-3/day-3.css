@@ -1,0 +1,95 @@
+:root {
+  --color: #2d424d;
+}
+*,
+button:hover,
+button:active {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"><circle cx="8" cy="8" r="8" fill-opacity=".5"/></svg>')
+      8 8,
+    auto;
+}
+
+.main {
+  height: 100vh;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  /* height: 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  background-color: rgb(235, 220, 248);
+  border: 1px solid var(--color);
+  border-radius: 10px;
+  box-shadow: 0.5px 1px 0 0 var(--color), 1.5px 2px 0 0 var(--color),
+    2.5px 3px 0 0 var(--color), 3.5px 4px 0 0 var(--color),
+    4.5px 5px 0 0 var(--color), 5.5px 6px 0 0 var(--color);
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+  transition: ease 0.3s;
+  padding: 5px;
+}
+img {
+  height: 50%;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #282828;
+  border-style: solid;
+}
+
+p {
+  font-size: 0.86rem;
+  font-weight: 300;
+  color: #282828;
+  padding: 2px;
+  margin-top: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between 2px;
+  /* margin-top: px; */
+  border-radius: 5px;
+  border: 1px solid #282828;
+  background-color: #fff49e;
+  color: #282828;
+  font-size: 0.8rem;
+  font-weight: 350;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 10px;
+  transition: linear 0.3s;
+  padding: 4px;
+  margin-top: -2px;
+}
+
+svg {
+  height: 13px;
+  width: 13px;
+  margin-left: 3px;
+}
+
+.card-container:hover {
+	box-shadow: 0.1px 0.2px 0 0 var(--color), 0.5px 1px 0 0 var(--color),
+	1px 1.5px 0 0 var(--color), 1.5px 2px 0 0 var(--color),
+	2px 2.5px 0 0 var(--color), 2.5px 3px 0 0 var(--color);
+}
+
+button:hover {
+  box-shadow: 0.1px 0.2px 0 0 var(--color), 0.5px 1px 0 0 var(--color),
+    1px 1.5px 0 0 var(--color), 1.5px 2px 0 0 var(--color),
+    2px 2.5px 0 0 var(--color), 2.5px 3px 0 0 var(--color);
+}

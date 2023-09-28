@@ -1,0 +1,57 @@
+<head>
+  <link rel="stylesheet" href="day-12.css" />
+</head>
+<body>
+  <div class="main">
+    <div class="btn-wrapper">
+      <div class="tab-buttons">
+        <div class="tab-button" onclick="showCity('paris')">Paris</div>
+        <div class="tab-button" onclick="showCity('santorini')">Santorini</div>
+        <div class="tab-button" onclick="showCity('amsterdam')">Amsterdam</div>
+      </div>
+    
+
+    <div class="city" id="paris">
+      <div class="content">
+        <h1>Paris</h1>
+        <p>Paris is the capital of France.</p>
+      </div>
+    </div>
+    <div class="city" id="santorini" style="display: none">
+      <div class="content">
+        <h1>Santorini</h1>
+        <p>Santorini is the capital of Greece.</p>
+      </div>
+    </div>
+    <div class="city" id="amsterdam" style="display: none">
+      <div class="content">
+        <h1>Amsterdam</h1>
+        <p>
+          Amsterdam is the Netherlands capital, known for its artistic heritage.
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+  <script>
+    function showCity(cityId) {
+      const cities = document.querySelectorAll(".city");
+      cities.forEach((city) => {
+        city.style.display = "none";
+      });
+
+      const selectedCity = document.getElementById(cityId);
+      selectedCity.style.display = "block";
+
+      const tabs = document.querySelectorAll(".tab-button");
+      tabs.forEach((tab) => {
+        tab.classList.remove("active");
+      });
+
+      const selectedTab = document.querySelector(
+        `.tab-button[data-city=${cityId}]`
+      );
+      selectedTab.classList.add("active");
+    }
+  </script>
+</body>
