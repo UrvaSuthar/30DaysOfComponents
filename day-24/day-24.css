@@ -1,0 +1,33 @@
+.main{
+	    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+}
+.search-box{
+background: #f8f8f8;
+display: flex;
+align-items: center;
+padding-inline: 15px;
+border-radius: 10px;
+border: 1px solid black;
+/* box-shadow: 0 5px 10px rgba(0,0,0,0.3); */
+}
+
+.search-box input, button{
+background-color: transparent;
+border: none;
+outline: none;
+margin: 10px 0 10px 0;
+}
+
+button{
+	margin-left: 3px;
+}
