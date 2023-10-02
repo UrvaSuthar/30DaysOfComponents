@@ -1,0 +1,46 @@
+*{
+margin: 0;
+padding: 0;
+}
+.main{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 100vh;
+background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v904-nunny-012_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=5943c6cd1f5d785cddeafb1f33ba56a4');
+background-size: cover;
+}
+.base{
+	top: 40%;
+	height: 100px;
+	width: 100px;
+	background-color: bisque;
+	border-radius: 50%;
+	position: relative;
+	border: 1px solid black;	
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQgEY-Gg2SNlXZFe3ozv_66Blf5RYaX8Ocw&usqp=CAU');
+	/* background-image: url('https://i.pinimg.com/236x/82/14/36/821436408aba175d6094c368b6c7979f.jpg'); */
+	background-size: cover;
+	background-position: center;
+}
+
+.indicator{
+	height: 20px;
+	width: 20px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/* left:60%;
+	bottom:60%; */
+	border: 2px solid rgb(51, 51, 51);
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+.noti_count{
+	font-family: monospace;
+	color: aliceblue;
+	font-weight: 700;
+}
