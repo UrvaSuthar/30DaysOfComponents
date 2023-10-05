@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" href="day-27.css" />
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="hr">
+        <h1 id="hr" class="hour"></h1>
+      </div>
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="min"><h1 id="min" class="minute"></h1></div>
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div class="sec"><h1 id="sec" class="second"></h1></div>
+    </div>
+  </div>
+
+
+
+  <script>
+    var countDownDate = new Date("Oct 5, 2023 09:37:25").getTime();
+
+    var x = setInterval(() => {
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+      document.getElementById('hr').innerHTML=Math.floor((distance % (1000 * 60 * 60 *24))/(1000*60*60));
+      document.getElementById('min').innerHTML=Math.floor((distance % (1000 * 60 * 60))/(1000*60));
+      document.getElementById('sec').innerHTML=Math.floor((distance % (1000 * 60))/(1000));
+
+    }, 1000);
+  </script>
+</body>
